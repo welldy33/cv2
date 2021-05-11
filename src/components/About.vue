@@ -1,21 +1,21 @@
 <template>
-    	<div id="about" class="section">
-			<div class="container">
-				<div class="row">
-                    <div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
-						<img class="imgabout" src="/src/assets/images/seswe.png" />
-					</div>
-					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
-						<h2>ABOUT WELLDY</h2>
-						<h4>WEB DEVELOPER</h4>
-						<p>Experienced in Designing and analyzing the System, as for several systems that have been involved in the development are:</p>
+<div id="about" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
+                <img class="imgabout" src="../assets/images/seswe.png" />
+            </div>
+            <div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
+                <h2>ABOUT WELLDY</h2>
+                <h4>WEB DEVELOPER</h4>
+                <p>Experienced in Designing and analyzing the System, as for several systems that have been involved in the development are:</p>
 
-						<p v-for="p in projects" :key="p">{{p}}</p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
+                <p v-for="p in projects" :key="p">{{p}}</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
 </template>
 <script>
 export default {
@@ -38,5 +38,8 @@ export default {
     background-repeat:   no-repeat;
     background-position: center center; 
     width: 60%;  
+}
+p{
+    color: grey;
 }
 </style>

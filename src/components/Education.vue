@@ -191,6 +191,7 @@ export default {
 .timeline-title {
     margin-top: 0;
     color: inherit;
+    color: white;
 }
 
 .timeline-body > p,

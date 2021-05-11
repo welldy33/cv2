@@ -1,46 +1,42 @@
 <template>
-  <div id="work" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 wow bounce">
-          <h2>EXPERIENCE</h2>
-        </div>
+<div id="work" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow bounce">
+        <h2>EXPERIENCE</h2>
       </div>
+    </div>
 
-      <div class="row">
-        <div
-          v-for="(com, index) in explist"
-          :key="index"
-          class="col-md-4 col-xs-11 wow fadeInUp"
-          data-wow-delay="0.6s"
-        >
-          <div class="media">
-            <div class="media-object media-left">
-              <img :src="getImgUrl(com.src)" class="logocomp" />
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">{{ com.jobtitle }}</h4>
-              <em
-                ><p class="compname">{{ com.compname }}</p></em
-              >
-              <em
-                ><p class="year">{{ com.year }}</p></em
-              >
-              <p class="desc">
-                {{ com.desc }}
-              </p>
-            </div>
+    <div class="row">
+      <div
+        v-for="(com, index) in explist"
+        :key="index"
+        class="col-md-4 col-xs-11 wow fadeInUp"
+        data-wow-delay="0.6s"
+      >
+        <div class="media">
+          <div class="media-object media-left">
+            <img :src="getImgUrl(com.src)" class="logocomp" />
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">{{ com.jobtitle }}</h4>
+            <em><p class="compname">{{ com.compname }}</p></em>
+            <em><p class="year">{{ com.year }}</p></em>
+            <p class="desc">
+              {{ com.desc }}
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </template>
 <script>
 export default {
   methods: {
     getImgUrl(pic) {
-      return ("/src/assets/images/" + pic);
+      return require("../assets/images/" + pic);
     },
   },
   data() {
@@ -77,7 +73,7 @@ requests hardware / software repair`,
           compname: "PT. ANGKASA PURA SOLUSI",
           jobtitle: "Technical Support",
           year: "2013-2014",
-          src: "logo-ap.jfif",
+          src: "logo-ap.jpg",
           desc: `Network monitoring,handling problems in the Field 
 (software / hardware),ensure operational work devices run 
 smoothly (computer, scanner, printer,gate, etc.`,
@@ -90,6 +86,7 @@ smoothly (computer, scanner, printer,gate, etc.`,
 <style scoped>
 .desc {
   text-align: justify;
+  color: grey;
 }
 .logocomp {
   border-radius: 50%;
@@ -99,8 +96,10 @@ smoothly (computer, scanner, printer,gate, etc.`,
 .year {
   margin: 0;
   margin-bottom: 10px;
+   color: gray;
 }
 .compname {
   margin: 0;
+  color: gray;
 }
 </style>

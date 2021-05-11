@@ -1,22 +1,22 @@
 <template>
-    	<div id="portfolio" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="wow bounce">Training & Seminar</h2>
-                    </div>
-                    <div v-for="(i,index) in cers" :key="index" class="col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                            <img :src="getImage(index+1)" height="200" class="img-responsive" alt="portfolio img">
-                                <div class="portfolio-overlay">
-                                    <h4>{{i.name}}</h4>
-                                    <h5>{{'Year  : '+i.year}}</h5>
-                                </div>
+<div id="portfolio" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="wow bounce">Training & Seminar</h2>
+            </div>
+            <div v-for="(i,index) in cers" :key="index" class="col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                <div class="portfolio-thumb">
+                    <img :src="getImage(index+1)" height="200" class="img-responsive" alt="portfolio img">
+                        <div class="portfolio-overlay">
+                            <h4>{{i.name}}</h4>
+                            <h5>{{'Year  : '+i.year}}</h5>
                         </div>
-                    </div>
                 </div>
             </div>
-	    </div>
+        </div>
+    </div>
+</div>
 </template>
 <script>
 export default {
@@ -73,7 +73,7 @@ export default {
     methods:{
         getImage(i){
             var str="c"+i
-            return ("/src/assets/images/" + str+".png");
+            return require("../assets/images/" + str+".png");
         }
     }
 }

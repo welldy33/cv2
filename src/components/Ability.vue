@@ -6,9 +6,9 @@
                    <h2 class="headerabi">ABILITY</h2>
              </div>
             <div class="card-body">
-                <div v-for="j in row" :key="j" class="row">
-                    <div v-for="i in j==4?1:qty" :key="i" class="col-2 wow fadeIn">
-                        <img :src="getImage(i,j)" class="icon"/>
+                <div class="row">
+                    <div v-for="i in 19" :key="i" class="col-2 wow fadeIn">
+                        <img :src="getImage(i)" class="icon"/>
                     </div>
                 </div>
             </div>
@@ -21,15 +21,15 @@ export default {
     data() {
         return {
             qty:6,
-            row:4,
+            row:[6,6,6,4],
             loop:0
         }
     },
     methods:{
-        getImage(i,j){
-            this.loop=(this.qty*j)-this.qty
-            var str="ic-"+(''+(i+this.loop)).padStart(2, '0')
-            return ("/src/assets/icon/" + str+".png");
+        getImage(i){
+           
+            var str="ic-"+(''+i).padStart(2, '0')
+            return require("../assets/icon/" + str+".png");
         }
     }
 }

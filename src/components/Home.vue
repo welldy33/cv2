@@ -33,3 +33,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+p{
+  color: antiquewhite !important;
+}
+</style>

@@ -23,3 +23,8 @@
 			</div>
 		</div>
 </template>
+<style scoped>
+p{
+	color: bisque;
+}
+</style>
