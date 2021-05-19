@@ -7,7 +7,7 @@
              </div>
             <div class="card-body">
                 <div class="row">
-                    <div v-for="i in 19" :key="i" class="col-sm-2">
+                    <div v-for="i in 19" :key="i" class="col-2">
                         <img :src="getImage(i)" class="icon"/>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ export default {
 </script>
 <style scoped>
 .icon{
-    width: 70px;
+    width: 50px;
     padding-bottom: 10px;
 }
 .section{
