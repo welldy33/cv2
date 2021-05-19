@@ -7,7 +7,7 @@
              </div>
             <div class="card-body">
                 <div class="row">
-                    <div v-for="i in 19" :key="i" class="col-2 wow fadeIn">
+                    <div v-for="i in 19" :key="i" class="col-sm-2">
                         <img :src="getImage(i)" class="icon"/>
                     </div>
                 </div>
