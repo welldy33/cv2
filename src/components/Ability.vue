@@ -1,9 +1,9 @@
 <template>
 <div class="section">
     <div class="container">
-        <div class="card text-white bg-dark">
+        <div class="card">
              <div class="card-header">
-                   <h2 class="headerabi">ABILITY</h2>
+                   <h2 style="color:black">ABILITY</h2>
              </div>
             <div class="card-body">
                 <div class="row">
@@ -38,5 +38,8 @@ export default {
 .icon{
     width: 70px;
     padding-bottom: 10px;
+}
+.section{
+    padding-bottom: 60px;
 }
 </style>

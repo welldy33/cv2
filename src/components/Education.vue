@@ -54,6 +54,9 @@ export default {
 }
 </script>
 <style scoped>
+.section{
+    padding-top: 60px;
+}
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -99,6 +102,7 @@ export default {
         .timeline > li > .timeline-panel {
             width: 46%;
             float: left;
+            background-color: white;
             border: 1px solid #d4d4d4;
             border-radius: 2px;
             padding: 20px;
@@ -191,7 +195,7 @@ export default {
 .timeline-title {
     margin-top: 0;
     color: inherit;
-    color: white;
+    color: black;
 }
 
 .timeline-body > p,
