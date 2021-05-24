@@ -8,7 +8,9 @@
             <div class="card-body">
                 <div class="row">
                     <div v-for="i in 19" :key="i" class="col-2">
-                        <img :src="getImage(i)" class="icon"/>
+                        <div class="ron">
+                            <img :src="getImage(i)" class="icon"/>
+                        </div>
                     </div>
                 </div>
             </div>
